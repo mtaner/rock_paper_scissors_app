@@ -5,7 +5,7 @@ get '/' do
 end
 
 post "/rps" do
-    @human_choice = params[:human_choice]
+    @human_choice = params[:human_choice].downcase
     erb :rps
-    "You submitted #{params[:human_choice].inspect}. Computer chose #{@computer_choice}. #{@result}"
+    "You submitted #{params[:human_choice].inspect}. Computer chose \"#{@computer_choice}\". #{@result}"
 end
