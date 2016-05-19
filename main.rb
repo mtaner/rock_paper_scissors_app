@@ -10,5 +10,5 @@ get '/rps' do
 end
 
 post '/rps' do
-  ExecJS.eval "console.log('Computer chose:' + computerChoice + '.' + result)"
+  ExecJS.eval "document.write('Computer chose:' + computerChoice + '.' + result)"
 end
