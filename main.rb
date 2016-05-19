@@ -1,10 +1,10 @@
 require 'sinatra'
-require 'execjs'
 
 get '/' do
   erb :home_page
 end
 
-get '/rps' do
-  erb :rps
+post "/rps" do
+    "You submitted #{params[:human_choice].inspect}. Computer chose #{params[:computer_choice].inspect}.#{params[:result].inspect}"
+    erb :rps
 end
