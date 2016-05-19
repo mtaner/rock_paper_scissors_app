@@ -4,6 +4,6 @@ get '/' do
   erb :home_page
 end
 
-post '/rps' do
+get '/rps' do
   erb :rps
 end
