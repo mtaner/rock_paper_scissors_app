@@ -5,6 +5,7 @@ get '/' do
 end
 
 post "/rps" do
-    "You submitted #{params[:human_choice].inspect}. Computer chose #{params[:computer_choice].inspect}.#{params[:result].inspect}"
+    @human_choice = params[:human_choice]
     erb :rps
+    "You submitted #{params[:human_choice].inspect}. Computer chose #{params[:computer_choice].inspect}.#{params[:result].inspect}"
 end
