@@ -1,11 +1,11 @@
 require 'sinatra'
+require File.dirname(__FILE__)+'/lib/rps'
 
 get '/' do
   erb :home_page
 end
 
 post "/rps" do
-    @human_choice = params[:human_choice].downcase
+    rps(params[:human_choice].downcase)
     erb :rps
-    "You submitted #{params[:human_choice].inspect}. Computer chose \"#{@computer_choice}\". #{@result}"
 end
