@@ -7,5 +7,5 @@ end
 post "/rps" do
     @human_choice = params[:human_choice]
     erb :rps
-    "You submitted #{params[:human_choice].inspect}. Computer chose #{params[:computer_choice].inspect}.#{params[:result].inspect}"
+    "You submitted #{params[:human_choice].inspect}. Computer chose #{@computer_choice}.#{@result}"
 end
