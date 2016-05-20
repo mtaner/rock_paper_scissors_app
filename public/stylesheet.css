@@ -48,7 +48,33 @@ body {
 }
 
 form {
-  width: 100px;
+  width: 600px;
   margin: 0 auto;
   font-family: "Arial";
+}
+
+label {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
+  text-align: center;
+  font-family: "Arial";
+}
+
+.goback {
+  width: 100px;
+  margin: 0 auto;
+  color: pink;
+}
+
+input[type=submit] {
+  width: 100px; height: 80px;
+}
+
+input[type=text] {
+  border-radius: 10px;
+  text-align: center;
 }

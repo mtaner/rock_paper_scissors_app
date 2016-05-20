@@ -1,6 +1,6 @@
-<p>Computer chose <%= @computer_choice %> and you chose <%= @human_choice %>. <%= @result %></p>
-<p>The score is: You <%= $human_score %> - <%= $computer_score %> Computer</p>
+<h1>Computer chose <%= @computer_choice %> and you chose <%= @human_choice %>. <%= @result %></h1>
+<h2>The score is: You <%= $human_score %> - <%= $computer_score %> Computer</h2>
 
-<form action="/rps_start">
+<form class="goback" action="/rps_start">
   <input type="submit" value="Play again?">
 </form>
