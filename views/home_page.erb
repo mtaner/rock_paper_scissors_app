@@ -1,3 +1,10 @@
-<h1>You have arrived at the biggest battle of all time. Humans v COMPUTERS!</h1>
-<h2>The battle is ongoing. The score is: MAN <%= $human_score %> - <%= $computer_score %> MACHINE</h2>
+<h1>You have arrived at the biggest battle of all time. Humans vs. Computer!</h1>
+<h2>The battle is ongoing. The score is: Humans [<%= $human_score %>] - [<%= $computer_score %>] Computer</h2>
+<h2><% if $human_score > $computer_score %>
+  <%= "Humans are winning!" %>
+<% elsif $computer_score > $human_score %>
+  <%= "Computer is winning - join the fight to help us beat it!" %>
+<% else %>
+  <%= "It is a tie! Let us break it!"%>
+<%end%></h2>
 <a href="/rps_start">Click here to play!</a>
